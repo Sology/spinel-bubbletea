@@ -1,0 +1,16 @@
+[package]
+name = "bubbletea"
+version = "0.1.4"
+sources = ["sp_bubbletea.c"]   # the C extension's role: copies and frees the Go strings
+
+# The bubbletea gem (marcoroth/bubbletea-ruby 0.1.4) for Spinel: its Ruby
+# (bubbletea.rb) over its Go code (go/, unchanged from the gem), which cgo
+# compiles into a C archive the binary links statically.
+
+[[build]]
+workdir   = "go"
+command   = "go build -buildmode=c-archive -o libbubbletea.a ."
+artifacts = ["libbubbletea.a"]
+
+[native]
+libs = ["${build.out}/libbubbletea.a"]

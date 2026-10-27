@@ -1,0 +1,5 @@
+/build/
+/vendor/
+*.o
+go/libbubbletea.a
+go/libbubbletea.h

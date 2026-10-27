@@ -1,0 +1,21 @@
+"0.1.4"
+"bubbletea v0.1.4 (upstream charmbracelet/x/ansi v0.8.0) [Go native extension]"
+["up", "enter", "ctrl+c", "space"]
+[Bubbletea::KeyMessage, "j", -1, "j", true, false, false, false]
+[Bubbletea::KeyMessage, "up", -2, nil, false, true, false, false]
+[Bubbletea::KeyMessage, "enter", 13, nil, false, false, true, true]
+[Bubbletea::KeyMessage, "alt+ä", -1, "ä", true, false, false, false]
+[Bubbletea::MouseMessage, 3, 4, true, true]
+Bubbletea::FocusMessage
+Bubbletea::BlurMessage
+NilClass
+nil
+[120, 40]
+[2, nil, ""]
+Bubbletea::QuitCommand
+[Bubbletea::BatchCommand, [Bubbletea::QuitCommand, Bubbletea::EnterAltScreenCommand]]
+[Bubbletea::SequenceCommand, [Bubbletea::ExitAltScreenCommand, Bubbletea::SetWindowTitleCommand], "t"]
+[Bubbletea::TickCommand, 0.5, :tick]
+[Bubbletea::SendMessage, 2, 120]
+[nil, "x", Bubbletea::SuspendCommand, Bubbletea::ExecCommand]
+[5, 5, 4]
